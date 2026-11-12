@@ -1,9 +1,9 @@
 class Productboard < Formula
   desc "Read-only Jira Cloud workspace for your terminal"
   homepage "https://github.com/murabcd/productboard"
-  url "https://github.com/murabcd/productboard/releases/download/v0.1.1/productboard-0.1.1-revision1.tar.gz"
-  sha256 "0ef1898c0dff5a063fb71365911922f2ae4f5bcfe562e42616fc34045705a0cf"
-  revision 1
+  url "https://github.com/murabcd/productboard/releases/download/v0.1.1/productboard-0.1.1-revision2.tar.gz"
+  sha256 "f46f36f5f7305d1f74c25021c0fae218acb827d593f03eec3c59851f73af6195"
+  revision 2
 
   depends_on macos: :ventura
   depends_on "node@24"
@@ -32,6 +32,6 @@ class Productboard < Formula
 
   test do
     assert_match "Usage: productboard", shell_output("#{bin}/productboard --help")
-    assert_equal version.to_s, shell_output("#{bin}/productboard --version").strip
+    assert_equal "productboard v#{version}", shell_output("#{bin}/productboard --version").strip
   end
 end
