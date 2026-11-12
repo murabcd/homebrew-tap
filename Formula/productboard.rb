@@ -1,9 +1,9 @@
 class Productboard < Formula
   desc "Read-only Jira Cloud workspace for your terminal"
   homepage "https://github.com/murabcd/productboard"
-  url "https://github.com/murabcd/productboard/releases/download/v0.1.1/productboard-0.1.1-revision2.tar.gz"
-  sha256 "f46f36f5f7305d1f74c25021c0fae218acb827d593f03eec3c59851f73af6195"
-  revision 2
+  url "https://github.com/murabcd/productboard/releases/download/v0.1.1/productboard-0.1.1-revision3.tar.gz"
+  sha256 "98a8fa55d717f011d0c136949a2d57815f71297a65e5120072d5e5a5689f4117"
+  revision 3
 
   depends_on macos: :ventura
   depends_on "node@24"
